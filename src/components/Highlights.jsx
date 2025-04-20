@@ -9,14 +9,20 @@ const Highlights = () => {
       description: 'Assured placement assistance backed by real projects and mock interview training.'
     },
     {
-      icon: '🟩',
+      icon: '⭐',
       title: 'FREE Soft Skills & Communication Training',
       description: 'Stand out in interviews with professional communication, etiquette, and confidence.'
+
     },
     {
       icon: '🟢',
       title: 'Project-Based Learning',
       description: 'Gain hands-on experience with real-world case studies and applications.'
+    },
+    {
+      icon: '🎓',
+      title: 'Scholarship Available',
+      description: 'Scholarships provided to support and encourage learning for all eligible candidates.'
     },
     {
       icon: '🟡',
@@ -27,11 +33,6 @@ const Highlights = () => {
       icon: '🟣',
       title: 'Online Training with Offline & Online Exams',
       description: ''
-    },
-    {
-      icon: '🎓',
-      title: 'Scholarship Available',
-      description: 'Scholarships provided to support and encourage learning for all eligible candidates.'
     }
   ];
 

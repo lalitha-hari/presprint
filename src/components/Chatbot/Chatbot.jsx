@@ -33,7 +33,7 @@ const Chatbot = ({ open, onClose }) => {
 
   const courseDetails = {
     "GitHub – Version Control Mastery": "🛠 Learn Git, GitHub, branches, merge, and versioning best practices.",
-    "Programming for Problem Solving": "💡 Focuses on C/C++ fundamentals, logic building, and coding basics.",
+    "Programming for Problem Solving": "💡 Focuses on Python/Java fundamentals, logic building, and coding basics.",
     "Data Structures & Algorithms": "📚 Covers arrays, linked lists, stacks, queues, trees, and more.",
     "HTML, CSS & JavaScript": "🎨 Build beautiful, responsive websites with HTML, CSS, and JS.",
     "React JS + MERN Stack": "⚛️ Dive deep into MongoDB, Express, React, and Node.js to build full-stack apps.",
@@ -64,7 +64,7 @@ const Chatbot = ({ open, onClose }) => {
     if (question.includes('about') || question.includes('program')) {
       response.text = "📘 PrepSprint is a 6-month immersive training program designed to bridge academic knowledge and industry readiness.";
     } else if (question.includes('highlight') || question.includes('feature')) {
-      response.text = "✅ 100% Placement Guarantee\n🟡 Trained by IIITH Grads\n🟢 Project-Based Learning\n🟣 Online/Offline Exams\n🟩 FREE Soft Skills Training";
+      response.text = "✅ 100% Placement Assistance\n🟡 Trained by IIITH Grads\n🟢 Project-Based Learning\n🟣 Online/Offline Exams\n🟩 FREE Soft Skills Training";
     } else if (question.includes('course') || question.includes('subject')) {
       response.text = "📚 We offer the following courses. Please select one to know more:";
       setShowCourseOptions(true);
@@ -131,10 +131,8 @@ const Chatbot = ({ open, onClose }) => {
             />
             {msg.type === 'index' && (
               <div className="index-options">
-                {['About Program', 'Highlights', 'Courses', 'Duration', 'Fee', 'Contact'].map((option, i) => (
-                  <button key={i} onClick={() => handleIndexClick(option)}>
-                    {option}
-                  </button>
+                {['About Program', 'Highlights', 'Courses', 'Duration', 'Contact'].map((option, i) => (
+                  <button key={i} onClick={() => handleIndexClick(option)}>{option}</button>
                 ))}
               </div>
             )}
@@ -143,9 +141,7 @@ const Chatbot = ({ open, onClose }) => {
         {showCourseOptions && (
           <div className="course-options">
             {courseList.map((course, index) => (
-              <button key={index} onClick={() => handleCourseSelect(course)}>
-                {course}
-              </button>
+              <button key={index} onClick={() => handleCourseSelect(course)}>{course}</button>
             ))}
           </div>
         )}

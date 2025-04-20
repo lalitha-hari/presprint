@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "react-scripts build && cp build/index.html build/404.html",
+    "predeploy": "react-scripts build && xcopy build\\index.html build\\404.html /Y /I",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

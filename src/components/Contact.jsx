@@ -61,9 +61,12 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <h3>Contact Person</h3>
-            <p>Mr. Phani Babu</p>
+            <p>Mr. Phani Babu (Marketing Head)</p>
             <h3>Phone Number</h3>
             <p><a href="tel:+919177726263">+91 91777 26263</a></p>
+            <h3>Email</h3>
+            <p>prepsprintcareers@gmail.com</p>
+
           </div>
           <div className="contact-form">
             {submitted ? (

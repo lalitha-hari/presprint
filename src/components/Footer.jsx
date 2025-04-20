@@ -23,6 +23,8 @@ const Footer = () => {
             <h3>Contact Us</h3>
             <p>Mr. Phani Babu</p>
             <p><a href="tel:+919177726263">+91 91777 26263</a></p>
+            <p>prepsprintcareers@gmail.com</p>
+
           </div>
         </div>
         <div className="footer-bottom">

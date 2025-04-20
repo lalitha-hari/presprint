@@ -18,10 +18,7 @@ const About = () => {
           <p>
            <strong>PrepSprint is a 6-month training program that helps students and job seekers gain the technical and professional skills needed for jobs. It includes online classes, offline exams, practical projects, expert guidance, and mock interviews to make participants job-ready and confident.</strong>
           </p>
-          <div className="duration">
-            <h3>Duration: <span>6 Months</span></h3>
-            <p>A balanced schedule with ample time for in-depth learning and practice.</p>
-          </div>
+          
         </div>
       </div>
     </section>
